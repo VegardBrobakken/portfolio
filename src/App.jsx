@@ -6,41 +6,43 @@ const me = {
   linkedin: "https://www.linkedin.com/in/vegardbrobakken/",
 };
 
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const projects = [
   {
     title: "Brobakken Solutions",
     description: "Web development for companies in Norway.",
     tags: ["Astro", "React", "Google SEO"],
     link: "https://brobakkensolutions.no/",
-    image: "/projects/brobakken-solutions.png",
+    image: asset("projects/brobakken-solutions.png"),
   },
   {
     title: "QR Pause",
     description: "iPhone App to block social media apps by scanning a QR Code.",
     tags: ["Swift"],
     link: "App store",
-    image: "/projects/qr-pause.jpg",
+    image: asset("projects/qr-pause.jpg"),
   },
   {
     title: "Gavehandleren",
     description: "iPhone App to organize your christmas gift shopping.",
     tags: ["React Native", "SQLite"],
     link: "https://apps.apple.com/no/app/gavehandleren/id6832375983?l=nb",
-    image: "/projects/gavehandleren.jpg",
+    image: asset("projects/gavehandleren.jpg"),
   },
   {
     title: "Lesehest",
     description: "iPhone App to register and rate the books you have read.",
     tags: ["React Native", "Supabase"],
     link: "https://apps.apple.com/no/app/lesehest/id6821960350?l=nb",
-    image: "/projects/lesehest.jpg",
+    image: asset("projects/lesehest.jpg"),
   },
   {
     title: "MatPlan",
     description: "iPhone App for food shopping and budget overview.",
     tags: ["React Native", "Google Firebase"],
     link: "https://apps.apple.com/no/app/matplan/id6759494573?l=nb",
-    image: "/projects/matplan.jpg",
+    image: asset("projects/matplan.jpg"),
   },
 ];
 
@@ -60,7 +62,7 @@ export default function App() {
       <main id="top">
         <header className="hero">
           <div className="hero-title">
-            <img src="/VegardBrobakken.jpg" alt={me.name} className="avatar" />
+            <img src={asset("VegardBrobakken.jpg")} alt={me.name} className="avatar" />
             <h1>{me.name}.</h1>
           </div>
           <p>{me.tagline}</p>
