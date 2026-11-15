@@ -1,6 +1,6 @@
 const me = {
   name: "Vegard Brobakken",
-  tagline: "Software engineer from Norway.",
+  tagline: "Software developer based in Oslo, Norway.",
   email: "veg.bro@hotmail.no",
   github: "https://github.com/VegardBrobakken",
   linkedin: "https://www.linkedin.com/in/vegardbrobakken/",
@@ -62,7 +62,11 @@ export default function App() {
       <main id="top">
         <header className="hero">
           <div className="hero-title">
-            <img src={asset("VegardBrobakken.jpg")} alt={me.name} className="avatar" />
+            <img
+              src={asset("VegardBrobakken.jpg")}
+              alt={me.name}
+              className="avatar"
+            />
             <h1>{me.name}.</h1>
           </div>
           <p>{me.tagline}</p>
