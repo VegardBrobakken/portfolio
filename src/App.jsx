@@ -20,7 +20,7 @@ const projects = [
     title: "QR Pause",
     description: "iPhone App to block social media apps by scanning a QR Code.",
     tags: ["Swift"],
-    link: "App store",
+    link: "https://apps.apple.com/no/app/qrpause/id6834776021?l=nb",
     image: asset("projects/qr-pause.jpg"),
   },
   {
